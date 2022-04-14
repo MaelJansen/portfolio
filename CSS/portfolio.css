@@ -1,0 +1,233 @@
+body{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(to bottom,rgba(5, 131, 235, 0.5), rgba(0, 0, 63, 0.5))
+}
+/*gestion du titre */
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1.title{
+    width: 33%;
+}
+/* logo acceuil */
+.lienAcceuil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-top: 15px;
+}
+.imageAcceuil{
+    width: 4%;
+    height: 4%;
+    background-color: white;
+    border-radius: 50px;
+}
+img.imageAcceuil{
+    display: flex;
+    width: 10%;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: flex-end;
+}
+/* texte de la première zone */
+.main{
+    text-align: center;
+    background: linear-gradient(to bottom,  #a172ee 0%,#5698da 100%);
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+}
+/* image et lien des contacts */
+.lienContact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+.contact{
+    width: 4%;
+    height: 4%;
+    background-color: white;
+    border-radius: 50px;
+}
+img.contact{
+    display: flex;
+    width: 10%;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: flex-end;
+}
+/* espace entre les deux parties */
+.space{
+    height: 25px;
+}
+/* gestion de la deuxième zone */
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Les realisation : retexte */
+.realisation{
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to bottom,  #a172ee 0%,#5698da 100%);
+    justify-content:space-around;
+    max-width: 50%;
+}
+/* La zone de la frise */
+.ensemblefrise{
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom,  #a172ee 0%,#5698da 100%);
+}
+/* gestion des contact */
+.meContacter{
+    text-align: center;
+}
+.infoPerso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom,  #a172ee 0%,#5698da 100%);
+    border-radius: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+}
+.mailEtTel{
+    list-style: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* gestion des slides dans la deuxième zone */
+.slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.ensembleUn{
+    display: flex;
+    flex-direction: row;
+}
+.Lowatem{
+    max-width: 80%;
+}
+.Bd{
+    max-width: 80%;
+}
+.installationPoste{
+    max-width: 80%;
+}
+/*Le code de la frise est inspiré de : 
+https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telecharger-gratuitement/*/
+.container{
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.partieDroite{
+    float: right;
+}
+.partieGauche{
+    float: left;
+    direction: rtl;
+}
+.marker{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: white;
+    margin-top: 10px;
+    z-index: 9999;
+}
+.contenu{
+    width: 95%;
+    padding: 0 15px;
+    color: #524c5c;
+}
+.contenu h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.contenu p{
+    font-size: 14px;
+    line-height: 1.5em;
+    color: aliceblue;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+}
+.block{
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+
+}
+/*Partie responsive du site*/
+@media screen and (max-width:900px){
+    .main{
+        width: 90vw;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .realisation{
+        margin-bottom: 5%;
+    }
+    body{
+        align-items: center;
+    }
+}
