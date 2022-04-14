@@ -46,6 +46,9 @@ img.imageAcceuil{
     border-color: gray;
     border-radius: 15px;
 }
+.presRapide{
+    max-width: 80%;
+}
 /* image et lien des contacts */
 .lienContact{
     display: flex;
