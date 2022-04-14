@@ -13,6 +13,9 @@ body{
 h1.title{
     width: 33%;
 }
+.presRapide{
+    max-width: 80%;
+}
 /* logo acceuil */
 .lienAcceuil{
     display: flex;
@@ -38,6 +41,9 @@ img.imageAcceuil{
 }
 /* texte de la première zone */
 .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background: linear-gradient(to bottom,  #a172ee 0%,#5698da 100%);
     border-radius: 10px;
@@ -45,9 +51,6 @@ img.imageAcceuil{
     border-style: solid;
     border-color: gray;
     border-radius: 15px;
-}
-.presRapide{
-    max-width: 80%;
 }
 /* image et lien des contacts */
 .lienContact{
@@ -256,7 +259,7 @@ https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telec
         min-width: 150px;
         font-size: 90px;
     } 
-    .infoPerso{
+    infoPerso{
         min-width: 90%
     }
 }
