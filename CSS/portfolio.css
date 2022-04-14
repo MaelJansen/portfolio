@@ -214,7 +214,7 @@ https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telec
 
 }
 /*Partie responsive du site*/
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
     .main{
         width: 90vw;
     }
