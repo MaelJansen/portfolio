@@ -142,6 +142,7 @@ a{
 .ensembleUn{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .Lowatem{
     max-width: 80%;
@@ -155,6 +156,14 @@ a{
 .Entreprise{
     max-height: 80%;
     max-width: 80%;
+}
+.siteWeb{
+    max-height: 80%;
+    max-width: 80%;
+}
+.JPO{
+    max-width: 50%;
+    max-height: 50%;
 }
 /*Le code de la frise est inspiré de : 
 https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telecharger-gratuitement/*/
