@@ -229,5 +229,28 @@ https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telec
     }
     body{
         align-items: center;
+        font-size: 25px;
+    }
+    .realisation{
+    max-width: 90%;
+    }
+    .lienContact{
+        min-height: 150px;
+    }
+    .contact{
+        min-height: 50%;
+        min-width: 50%;
+    }
+    .lienAcceuil{
+        min-height: 150px;
+    }
+    .imageAcceuil{
+        min-height: 50%;
+        min-width: 50%;
+    }
+    h1.title{
+        min-height: 150px;
+        min-width: 150px;
+        font-size: 90px;
     }
 }
