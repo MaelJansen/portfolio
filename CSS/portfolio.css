@@ -236,6 +236,7 @@ https://designspartan.com/ressources/15-timelines-verticales-en-html-css-a-telec
     body{
         align-items: center;
         font-size: 25px;
+        background-size: cover;
     }
     .realisation{
     max-width: 90%;
